@@ -13,6 +13,10 @@ function applyTheme(name) {
   document.querySelectorAll('.theme-dot').forEach(b => {
     b.classList.toggle('active', b.dataset.theme === name);
   });
+  if(name == sakura)
+  {
+  document.getElementById(mains).style.backgroundImage = 'bg/sakuraBG.png';
+  }
   localStorage.setItem('theme', name);
 }
 
