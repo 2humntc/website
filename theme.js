@@ -15,7 +15,7 @@ function applyTheme(name) {
   });
   if(name == sakura)
   {
-  document.getElementById(mains).style.backgroundImage = 'url(bg/sakuraBG.png)';
+  document.getElementById(mains).style.backgroundImage = "url('bg/sakuraBG.png')";
   }
   localStorage.setItem('theme', name);
 }
