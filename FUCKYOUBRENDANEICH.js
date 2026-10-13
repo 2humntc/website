@@ -1,3 +1,5 @@
+function roll()
+{
     const ARAY = [
       'Ski-U-Mah',
       'Is that so...',
@@ -6,3 +8,6 @@
      ];
 
     document.getElementById('randomtext').innerHTML = ARAY[Math.floor(Math.random()*texts.length)];
+}
+
+roll();
