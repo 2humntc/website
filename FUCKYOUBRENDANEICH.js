@@ -1,6 +1,6 @@
 object.addEventListener("load", function roll()
 {
-    var ARAY = [
+    const ARAY = [
       'Ski-U-Mah',
       'Is that so...',
       'Ufu, ufu, ufufufufufufufu',
