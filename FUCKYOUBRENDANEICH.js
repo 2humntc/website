@@ -1,4 +1,4 @@
-    var ARRAY = [
+    const ARRAY = [
       "Ski-U-Mah",
       "Is that so...",
       "Ufu, ufu, ufufufufufufufu",
