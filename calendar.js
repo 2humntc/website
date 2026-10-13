@@ -1,4 +1,5 @@
 let touhouEvents = {};
+let meetings = {};
 
 async function loadEvents() {
   try {
