@@ -1,4 +1,4 @@
-object.addEventListener("click", function roll()
+object.addEventListener("load", function roll()
 {
     var ARAY = [
       'Ski-U-Mah',
@@ -7,5 +7,5 @@ object.addEventListener("click", function roll()
       'The moon tonight is reed, you shall know death!'
      ];
 
-    document.getElementById('randomtext').innerHTML = ARAY[Math.floor(Math.random()*texts.length)];
+    document.getElementById('randomtext').innerHTML = ARAY[Math.floor(Math.random()*ARAY.length)];
 });
