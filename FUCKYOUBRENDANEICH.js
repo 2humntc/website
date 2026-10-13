@@ -1,4 +1,4 @@
-function roll()
+object.addEventListener("load", function roll()
 {
     const ARAY = [
       'Ski-U-Mah',
@@ -8,6 +8,4 @@ function roll()
      ];
 
     document.getElementById('randomtext').innerHTML = ARAY[Math.floor(Math.random()*texts.length)];
-}
-
-roll();
+});
