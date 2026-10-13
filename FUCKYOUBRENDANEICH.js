@@ -1,4 +1,4 @@
-object.addEventListener("load", function roll()
+document.addEventListener("load", function roll()
 {
     const ARAY = [
       'Ski-U-Mah',
