@@ -12,12 +12,3 @@ function setLang(name) {
 
 }
 
-applyTheme(localStorage.getItem('theme') || 'scarlet');
-
-document.addEventListener('DOMContentLoaded', () => {
-  applyTheme(localStorage.getItem('theme') || 'scarlet');
-  document.querySelectorAll('.theme-dot').forEach(btn => {
-    btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
-  });
-});
-
