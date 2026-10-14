@@ -7,7 +7,7 @@ const lang = {
 function setLang(name) {
   const t = lang[name];
   if (!t) return;
-  document.getElementById('lange').innerHTML = lang[0];
+  document.getElementById('lange').innerHTML = t[0];
   localStorage.lang('theme', name);
 }
 
