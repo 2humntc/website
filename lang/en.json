@@ -1,0 +1,60 @@
+{
+  "site_title": "Touhou Club of the University of Minnesota",
+
+  "nav_about": "About",
+  "nav_art": "Art",
+  "nav_fiction": "Fiction",
+  "nav_events": "Events",
+  "nav_join": "Join Us",
+  "lang_select": "Select language",
+
+  "theme_scarlet": "Scarlet",
+  "theme_sakura": "Sakura",
+  "theme_eientei": "Eientei",
+  "theme_sanzu": "Sanzu",
+  "theme_moriya": "Suwa",
+
+  "footer_discord": "Discord",
+  "footer_instagram": "Instagram",
+  "footer_spotify": "Spotify",
+  "footer_email": "Email",
+
+  "index_page_title": "UMN Touhou Club",
+  "hero_title": "UMN Touhou Club",
+
+  "quotes": [
+    "Ski-U-Mah",
+    "Is that so...",
+    "Ufu, ufu, ufufufufufufufu",
+    "The moon tonight is red, you shall know death!",
+    "Go ahead choke me out, I’ll wake up in 30 seconds. you’ll be stupid forever",
+    "Can you remember how many slices of bread you have eaten until now",
+    "Thirteen, I prefer Japanese food"
+  ],
+
+  "hero_desc": "Welcome to the Touhou Club of UMN – Twin Cities. Not yet official, but very real. LARPers and newcomers welcome — everyone starts somewhere.",
+
+  "event_label": "Next meeting",
+  "event_title": "Fourth meeting - October 16th, 4pm - 6pm?",
+  "event_location": "Folwell Hall likely",
+
+  "bring_heading": "What should be brought to meetings?",
+  "bring_text": "Laptop, other than that I don't care.",
+  "larp_heading": "lowk i larp 2hu because i like the fumos 😂✌️",
+  "larp_text": "LARPers and other newcomers are welcome here, everyone has to start somewhere.",
+  "thanks_heading": "Thank you",
+  "thanks_text": "thank you to all my members and everyone whos attended club!",
+
+  "links_heading": "Links",
+  "links_email": "Email:",
+  "links_guestbook": "Guestbook",
+  "links_archive": "Featured Artwork Archive",
+  "links_spotify": "Spotify Playlist",
+
+  "no_images": "[ no images found ]",
+
+  "nf_page_title": "Page not found",
+  "nf_title": "Something was here before",
+  "nf_desc": "But now it's lost to time...",
+  "nf_back": "← Back to home"
+}

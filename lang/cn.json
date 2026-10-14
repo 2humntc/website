@@ -1,0 +1,60 @@
+{
+  "site_title": "明尼苏达大学东方同好会",
+
+  "nav_about": "关于",
+  "nav_art": "艺术",
+  "nav_fiction": "小说",
+  "nav_events": "活动",
+  "nav_join": "加入我们",
+  "lang_select": "选择语言",
+
+  "theme_scarlet": "绯红",
+  "theme_sakura": "樱花",
+  "theme_eientei": "永远亭",
+  "theme_sanzu": "三途川",
+  "theme_moriya": "诹访",
+
+  "footer_discord": "Discord",
+  "footer_instagram": "Instagram",
+  "footer_spotify": "Spotify",
+  "footer_email": "邮箱",
+
+  "index_page_title": "UMN 东方同好会",
+  "hero_title": "UMN 东方同好会",
+
+  "quotes": [
+    "Ski-U-Mah",
+    "是这样吗……",
+    "呵呵，呵呵，呵呵呵呵呵呵呵呵",
+    "今夜的月亮是红色的，你将知晓死亡！",
+    "来啊，把我掐晕，我30秒后就会醒来，而你会永远是个笨蛋",
+    "你还记得自己至今吃过多少块面包吗",
+    "十三片，我更喜欢日本料理"
+  ],
+
+  "hero_desc": "欢迎来到明尼苏达大学双城分校东方同好会。不是官方的，但绝对真实存在。欢迎 LARPer 和新人加入——人人都是从新手开始的！",
+
+  "event_label": "下次聚会",
+  "event_title": "第四次聚会 - 10月16日，下午4点至6点？",
+  "event_location": "可能在 Folwell Hall",
+
+  "bring_heading": "聚会需要带什么？",
+  "bring_text": "带上笔记本电脑就行，其他的我不在乎。",
+  "larp_heading": "说真的，我就是在装东方粉，因为我喜欢 Fumo 😂✌️",
+  "larp_text": "欢迎 LARPer 和其他新人，人人都是从新手开始的。",
+  "thanks_heading": "感谢",
+  "thanks_text": "感谢所有成员，以及每一位参加过社团活动的人！",
+
+  "links_heading": "链接",
+  "links_email": "邮箱：",
+  "links_guestbook": "留言簿",
+  "links_archive": "精选作品存档",
+  "links_spotify": "Spotify 歌单",
+
+  "no_images": "[ 未找到图片 ]",
+
+  "nf_page_title": "页面未找到",
+  "nf_title": "这里曾经有些什么",
+  "nf_desc": "但如今已消逝在时间之中……",
+  "nf_back": "← 返回首页"
+}

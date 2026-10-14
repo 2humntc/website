@@ -39,6 +39,7 @@ li {
   cursor: url('./cursor/kogasa/character_select.png') 0 0, text !important;
 }
 
+i,
 a,
 button,
 [onclick],
@@ -57,11 +58,11 @@ img,
 }
 
 body {
-  background-color: var(--bg-color, white); 
+  background-color: var(--bg-color, white);
   background-image: var(--bg-image, none);
   background-repeat: repeat;
   background-size: auto;
-  font-family: var(--font-family, "Fredoka"), sans-serif; 
+  font-family: var(--font-family, "Fredoka"), sans-serif;
   color: #2a2a2a;
 }
 
@@ -358,6 +359,77 @@ body {
 
 .footer-icon:hover {
   color: var(--color-text-deeper);
+}
+
+.lang-menu {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family, Arial, sans-serif);
+}
+
+#lang-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-dark);
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#lang-btn:hover {
+  color: var(--color-accent);
+}
+
+.lang-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin: 4px 0 0;
+  padding: 4px 0;
+  list-style: none;
+  min-width: 130px;
+  background: var(--color-strip-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px var(--color-author-bg);
+  z-index: 1000;
+}
+
+.lang-list.open {
+  display: block;
+}
+
+.lang-list li {
+  display: block;
+}
+
+.lang-list button {
+  width: 100%;
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  color: var(--color-text-dark);
+  font-family: inherit;
+  font-size: 1em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lang-list li button:hover,
+.lang-list li button:focus-visible {
+  color: var(--color-text-deeper);
+  background: var(--color-primary);
+  outline: none;
+}
+
+#lang-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.lang-list[hidden] {
+  display: none;
 }
 
 /* ── This is for the img display on the main page ── */

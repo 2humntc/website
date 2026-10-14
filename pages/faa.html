@@ -27,6 +27,7 @@
     });
   </script>
   <script src="../theme.js"></script>
+  <script src="../lang.js" defer></script>
 </head>
 
 <body>
@@ -36,13 +37,25 @@
   </div>
 
   <div class="header">
-    <h1 id="logo"><a href="../index.html">Touhou Club of the University of Minnesota</a></h1>
+    <h1 id="logo"><a href="index.html" data-i18n="site_title">Touhou Club of the University of Minnesota</a></h1>
     <ul class="nav-links">
-      <li><a href="../index.html">About</a></li>
-      <li><a href="faa.html">Art</a></li>
-      <li><a href="fafic.html">Fiction</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="join.html">Join</a></li>
+      <li><a href="../index.html" data-i18n="nav_about">About</a></li>
+      <li><a href="faa.html" data-i18n="nav_art">Art</a></li>
+      <li><a href="fafic.html" data-i18n="nav_fiction">Fiction</a></li>
+      <li><a href="events.html" data-i18n="nav_events">Events</a></li>
+      <li><a href="join.html" data-i18n="nav_join">Join Us</a></li>
+
+      <li class="lang-menu">
+        <button id="lang-btn" aria-label="Select language" data-i18n-attr="aria-label:lang_select" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fa-solid fa-earth-americas"></i>
+        </button>
+        <ul id="lang-list" class="lang-list">
+          <li><button data-lang="en">English</button></li>
+          <li><button data-lang="es">Español</button></li>
+          <li><button data-lang="cn">中文</button></li>
+        </ul>
+      </li>
     </ul>
   </div>
 
@@ -71,7 +84,7 @@
           <img src="../imgs/WRain_momoyo.png" alt="momoyo by WRain" onclick="openLightbox(this.src)">
           <span class="art-author">© WRain</span>
         </div>
-        
+
         <div class="gallery-item">
           <img src="../imgs/Ink_reimu.png" alt="Reimu by Ink" onclick="openLightbox(this.src)">
           <span class="art-author">© Ink</span>

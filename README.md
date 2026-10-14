@@ -5,6 +5,7 @@
 - [c. Want to add content for updates (sidebar)](#c-want-to-add-content-for-updates-sidebar)
 - [d. Want to change the style](#d-want-to-change-the-style)
 - [e. Want to change the cursor](#e-want-to-change-the-cursor)
+- [f. Want to add translation](#f-want-to-add-translation)
 
 ## a. Want to add art
 
@@ -103,3 +104,39 @@ python -c "from PIL import Image; import os; [Image.open(f'cursor/{f}').convert(
 ```
 
 4. Remember to delete your old images!
+
+## f. Want to add translation
+
+### How to add translation(if translation file doesn't exist)
+
+1. Create a .json file under `lang/`, named as the language, for exmaple, `{new_language_name}.json`
+
+2. Add one line under `<ul id="lang-list" class="lang-list">` in each .html file, for example:
+```
+`<li><button data-lang="{new_language_name}">{language_name}</button></li>`
+```
+
+3. Add the language in `lang.js`, for example(should use official ):
+
+```
+const SUPPORTED = ["en", "es", "cn", "{new_language_name}"];
+const HTML_LANG = { en: "en", es: "es", cn: "zh-CN", {new_language_name}: "{language_official_code}" };
+```
+
+### How to add translation(if translation file already exist)
+
+1. Add context in English, for example:
+ ```
+ <p>This is a text context.</p>
+ ```
+
+2. Add unique `data-i18n` attributes for each context, for example:
+ ```
+<p data-i18n="{page_name}_test">This is a text context.</p>
+ ```
+3. Open the corresponding translation file under `lang/`, 
+and add the translaton. For example, if you want to add a Chinese version, open cn.json and add:
+ ```
+"{page_name}_test": "{tanslation_context}",
+ ```
+
