@@ -8,6 +8,8 @@ function setLang(name) {
   const t = lang[name];
   if (!t) return;
   document.getElementById('lange').innerHTML = t[0];
-  localStorage.lang('theme', name);
+  localStorage.setItem('lang', name);
 }
+
+setLang(name 
 
