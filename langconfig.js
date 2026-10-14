@@ -1,4 +1,5 @@
 const lang = {
+  america: {"Welcome to the Touhou Club of UMN – Twin Cities. Not yet official, but very real. LARPers and newcomers welcome — everyone starts somewhere."},
   spain: {"Bienvenido al Club de Touhou de UMN - Twin Cities. Aún no oficial, pero muy real. LARPers y recién llegados son bienvenidos — Todos empezamos en algún lugar!"},
   china: {"歡迎光臨 俱樂部的東方明尼苏达大学,不官方, 可是非常真.欢迎新人新人欢迎! 人人開始某處"},
 
@@ -11,5 +12,5 @@ function setLang(name) {
   localStorage.setItem('lang', name);
 }
 
-setLang(name 
-
+setLang(localStorage.getItem('lang') || 'america');
+    
