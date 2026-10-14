@@ -135,7 +135,7 @@ const HTML_LANG = { en: "en", es: "es", cn: "zh-CN", {new_language_name}: "{lang
 <p data-i18n="{page_name}_test">This is a text context.</p>
  ```
 3. Open the corresponding translation file under `lang/`, 
-and add the translaton. For example, if you want to add a Chinese version, open cn.json and add:
+and add the translaton, for example:
  ```
 "{page_name}_test": "{tanslation_context}",
  ```
