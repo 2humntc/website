@@ -1,6 +1,6 @@
-const SUPPORTED = ["en", "es", "cn"];
+const SUPPORTED = ["en", "es", "cn","ru"];
 const DEFAULT_LANG = "en";
-const HTML_LANG = { en: "en", es: "es", cn: "zh-CN" };
+const HTML_LANG = { en: "en", es: "es", cn: "zh-CN",ru: "ru" };
 
 const LANG_DIR = new URL("lang/", document.currentScript.src).href;
 
@@ -69,6 +69,7 @@ function detectLanguage() {
   const nav = (navigator.language || "en").toLowerCase();
   if (nav.startsWith("zh")) return "cn";
   if (nav.startsWith("es")) return "es";
+  if (nav.startsWith("ru")) return "ru";
   return DEFAULT_LANG;
 }
 
