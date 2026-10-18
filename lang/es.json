@@ -1,14 +1,14 @@
 {
   "site_title": "Touhou Club of the University of Minnesota",
 
-  "nav_about": "About",
-  "nav_art": "Art",
-  "nav_fiction": "Fiction",
-  "nav_events": "Events",
-  "nav_join": "Join Us",
+  "nav_about": "Sobre",
+  "nav_art": "Arte",
+  "nav_fiction": "Ficción",
+  "nav_events": "Eventos",
+  "nav_join": "Únete a nosotros",
   "lang_select": "Select language",
 
-  "theme_scarlet": "Scarlet",
+  "theme_scarlet": "Escarlata",
   "theme_sakura": "Sakura",
   "theme_eientei": "Eientei",
   "theme_sanzu": "Sanzu",
