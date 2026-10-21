@@ -116,7 +116,7 @@ python -c "from PIL import Image; import os; [Image.open(f'cursor/{f}').convert(
 `<li><button data-lang="{new_language_name}">{language_name}</button></li>`
 ```
 
-3. Add the language in `lang.js`, for example(should use official ):
+3. Add the language in `lang.js`, for example(should use official code):
 
 ```
 const SUPPORTED = ["en", "es", "cn", "{new_language_name}"];

@@ -316,26 +316,6 @@ body {
   border: none;
 }
 
-.theme-dot[data-theme="scarlet"].active {
-  box-shadow: 0 0 0 2px #e8919a;
-}
-
-.theme-dot[data-theme="sakura"].active {
-  box-shadow: 0 0 0 2px #e8b8d8;
-}
-
-.theme-dot[data-theme="eientei"].active {
-  box-shadow: 0 0 0 2px #9ab89a;
-}
-
-.theme-dot[data-theme="sanzu"].active {
-  box-shadow: 0 0 0 2px #8aa8d0;
-}
-
-.theme-dot[data-theme="moriya"].active {
-  box-shadow: 0 0 0 2px #66ff66;
-}
-
 .footer {
   position: fixed;
   bottom: 0;
