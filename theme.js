@@ -5,7 +5,7 @@ const themes = {
   sanzu: { '--color-primary': '#c8d8f0', '--color-accent': '#6080c0', '--color-text-dark': '#2c47a0', '--color-text-deeper': '#0a1030', '--color-strip-bg': '#f0f4fc', '--color-border': '#b0c8e8', '--color-author-bg': 'rgba(10, 16, 48, 0.7)', '--color-author-text': '#e8eef8', '--font-family': 'Fredoka' },
   moriya: { '--color-primary': '#b8edc8', '--color-accent': '#009933', '--color-text-dark': '#006622', '--color-text-deeper': '#002b12', '--color-strip-bg': '#f0faf2', '--color-border': '#a8d9b5', '--color-author-bg': 'rgba(0, 43, 18, 0.75)', '--color-author-text': '#e0f7e7', '--bg-image': 'url("bg/sanaeBG.png")', '--font-family': 'Arial' },
   fusion: { '--color-primary': '#ff9933', '--color-accent': '#804d1a', '--color-text-dark': '#7a3a00', '--color-text-deeper': '#3d1a00', '--color-strip-bg': '#fff4e6', '--color-border': '#e8a870', '--color-author-bg': 'rgba(61, 26, 0, 0.75)', '--color-author-text': '#ffe8cc', '--font-family': 'Fredoka' },
-  myouren: { '--color-primary': '#660066', '--color-accent': '#792079', '--color-text-dark': '#8c408c', '--color-text-deeper': '#ffcc00', '--color-strip-bg': '#fff4e6', '--color-border': '#ffd633', '--color-author-bg': 'rgb(255, 204, 0, 0.75)', '--color-author-text': '#ffd633', '--font-family': 'Fredoka' }
+  myouren: { '--color-primary': '#660066', '--color-accent': '#792079', '--color-text-dark': '#ffd633', '--color-text-deeper': '#ffcc00', '--color-strip-bg': '#fff4e6', '--color-border': '#ffd633', '--color-author-bg': 'rgb(255, 204, 0, 0.75)', '--color-author-text': '#8c408c', '--font-family': 'Fredoka' }
 };
 
 const dotStyles = document.createElement('style');
