@@ -6,7 +6,7 @@ const themes = {
   moriya: { '--color-primary': '#b8edc8', '--color-accent': '#009933', '--color-text-dark': '#006622', '--color-text-deeper': '#002b12', '--color-strip-bg': '#f0faf2', '--color-border': '#a8d9b5', '--color-author-bg': 'rgba(0, 43, 18, 0.75)', '--color-author-text': '#e0f7e7', '--bg-image': 'url("bg/sanaeBG.png")', '--font-family': 'Arial' },
   fusion: { '--color-primary': '#ff9933', '--color-accent': '#804d1a', '--color-text-dark': '#7a3a00', '--color-text-deeper': '#3d1a00', '--color-strip-bg': '#fff4e6', '--color-border': '#e8a870', '--color-author-bg': 'rgba(61, 26, 0, 0.75)', '--color-author-text': '#ffe8cc', '--font-family': 'Fredoka' },
   myouren: { '--color-primary': '#660066', '--color-accent': '#792079', '--color-text-dark': '#ffd633', '--color-text-deeper': '#8c408c', '--color-strip-bg': '#fff4e6', '--color-border': '#4c004c', '--color-author-bg': 'rgb(255, 204, 0, 0.75)', '--color-author-text': '#ffcc00', '--font-family': 'Fredoka' },
-  shotoku: { '--color-primary': '#ffd633', '--color-accent': '#792079', '--color-text-dark': '#ffd633', '--color-text-deeper': '#bfa126', '--color-strip-bg': '#660066', '--color-border': '#eac42f', '--color-author-bg': 'rgb(255, 204, 0, 0.75)', '--color-author-text': '#ffcc00', '--font-family': 'Fredoka' }
+  shotoku: { '--color-primary': '#ffd633', '--color-accent': '#9900cc', '--color-text-dark': '#ffd633', '--color-text-deeper': '#bfa126', '--color-strip-bg': '#660066', '--color-border': '#eac42f', '--color-author-bg': 'rgb(255, 204, 0, 0.75)', '--color-author-text': '#ffcc00', '--font-family': 'Fredoka' }
 };
 
 const dotStyles = document.createElement('style');
