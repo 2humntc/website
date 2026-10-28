@@ -125,6 +125,28 @@ body {
   padding-top: 30px;
 }
 
+.join-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  isolation: isolate;
+}
+
+.join-btn::before {
+  content: '';
+  position: absolute;
+  inset: -2px -10px;
+  background: var(--color-strip-bg);
+  border-radius: 42% 58% 38% 62% / 55% 45% 62% 38%;
+  z-index: -1;
+  transition: border-radius 0.3s ease;
+}
+
+.join-btn:hover::before {
+  border-radius: 58% 42% 62% 38% / 38% 62% 45% 55%;
+}
+
 /* ── This is for the left side update card ── */
 .sidebar-updates {
   width: 220px;
@@ -780,7 +802,53 @@ body {
   grid-template-columns: 1fr;
 }
 
+.join-flyer-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.join-flyer {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
 /* ── This is for the join.html ── */
+
+/* ── This is for the credits.html ── */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.profile-card:hover img {
+  transform: scale(1.05);
+}
+
+.profile-card .profile-name {
+  font-family: var(--font-family);
+  color: var(--color-text-dark);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ── This is for the credits.html ── */
 
 /* ── This is for the mobile version ── */
 
@@ -824,6 +892,7 @@ body {
     min-width: 0 !important;
     flex: none !important;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   /* Sidebar shows at bottom */
@@ -950,6 +1019,15 @@ body {
   .footer {
     gap: 14px;
     padding: 8px 16px;
+  }
+
+  .profile-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-card .profile-name {
+    font-size: 0.85rem;
   }
 }
 

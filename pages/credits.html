@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - UMN Touhou Club</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('open');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+        }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+    <script src="../theme.js"></script>
+    <script src="../lang.js" defer></script>
+</head>
+
+<body>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">✕</span>
+        <img id="lightbox-img" src="" alt="" />
+    </div>
+    <div class="header">
+        <h1 id="logo"><a href="index.html" data-i18n="site_title">Touhou Club of the University of Minnesota</a></h1>
+        <ul class="nav-links">
+            <li><a href="../index.html" data-i18n="nav_about">About</a></li>
+            <li><a href="faa.html" data-i18n="nav_art">Art</a></li>
+            <li><a href="fafic.html" data-i18n="nav_fiction">Fiction</a></li>
+            <li><a href="events.html" data-i18n="nav_events">Events</a></li>
+            <li><a href="credits.html" data-i18n="nav_credits">Credits</a></li>
+            <li><a href="join.html" data-i18n="nav_join" class="join-btn">Join Us</a></li>
+
+            <li class="lang-menu">
+                <button id="lang-btn" aria-label="Select language" data-i18n-attr="aria-label:lang_select"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </button>
+                <ul id="lang-list" class="lang-list">
+                    <li><button data-lang="en">English</button></li>
+                    <li><button data-lang="es">Español</button></li>
+                    <li><button data-lang="cn">中文</button></li>
+                    <li><button data-lang="ru">Pусский</button></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-layout">
+
+        <main class="main">
+
+            <section class="main-content">
+                <h2>⭐</h2>
+                <p>Thank you guys!</p>
+            </section>
+
+            <section class="main-content">
+                <a href="https://your-link" class="profile-card" target="_blank">
+                    <img src="../credits/flyer.png" alt="Profile" />
+                    <span class="profile-name">Name</span>
+                </a>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="updates.js"></script>
+
+    <footer class="footer">
+        <a href="https://discord.gg/XPkmejzgx" class="footer-icon" title="Discord"><i
+                class="fa-brands fa-discord"></i></a>
+        <a href="https://www.instagram.com/" class="footer-icon" title="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://open.spotify.com/playlist/16VnuvSYcm5MkBt9EatOq9?si=581fd68eb5e04eec" class="footer-icon"
+            title="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        <a href="mailto:2humn@tutanota.de" class="footer-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+
+</body>
+
+</html>

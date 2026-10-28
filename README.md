@@ -6,6 +6,7 @@
 - [d. Want to change the style](#d-want-to-change-the-style)
 - [e. Want to change the cursor](#e-want-to-change-the-cursor)
 - [f. Want to add translation](#f-want-to-add-translation)
+- [g. Want to add credits](#f-want-to-add-credits)
 
 ## a. Want to add art
 
@@ -140,3 +141,15 @@ and add the translaton, for example:
 "{page_name}_test": "{tanslation_context}",
  ```
 
+ ## g. Want to add credits
+
+### How to add credits
+
+1. put the file under `credits/`
+2. Add the code in `pages/credits.html`, put the code under `<section class="main-content">`, keep the code as the following format:
+```
+<a href="{link}" class="profile-card" target="_blank">
+  <img src="../credits/{img}.png" alt="Profile" />
+  <span class="profile-name">{name}</span>
+</a>
+```
