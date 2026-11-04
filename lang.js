@@ -1,6 +1,6 @@
 const SUPPORTED = ["en", "es", "cn","ru"];
 const DEFAULT_LANG = "en";
-const HTML_LANG = { en: "en", es: "es", cn: "zh-CN",ru: "ru" };
+const HTML_LANG = { en: "en", es: "es", cn: "zh-CN",ru: "ru", vi: "vi", fr: "fr", de: "de"};
 
 const LANG_DIR = new URL("lang/", document.currentScript.src).href;
 
