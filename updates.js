@@ -1,8 +1,10 @@
 document.querySelector('.sidebar-updates').innerHTML = `
   <h2 class="sidebar-title">Updates</h2>
   <ul class="update-list">
-    <li><span class="update-date">Oct. 30, 2026</span>🎃Happy Halloween🎃</li>
-    <li><span class="update-date">Oct. 23, 2026</span>🍕</li>
+    <li><span class="update-date">Nov. 6, 2026</span>Seventh meeting, good turnout, lots of fun was had today</li>
+    <li><span class="update-date">Oct. 31, 2026</span>🎃Happy Halloween🎃</li>
+    <li><span class="update-date">Oct. 30, 2026</span>Sixth meeting, lots of food was brought for the holiday season</li>
+    <li><span class="update-date">Oct. 23, 2026</span>Fifth meeting, 🍕</li>
     <li><span class="update-date">Oct. 16, 2026</span> Our fourth meeting! Now until 6:30 PM!</li>
     <li><span class="update-date">Oct. 9, 2026</span> Our third meeting! Really discuss a lot!</li>
     <li><span class="update-date">Oct. 2, 2026</span> Our second meeting...</li>
