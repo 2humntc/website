@@ -1,6 +1,7 @@
 document.querySelector('.sidebar-updates').innerHTML = `
   <h2 class="sidebar-title">Updates</h2>
   <ul class="update-list">
+    <li><span class="update-date"><div data-i18n-html="nov">Nov.</div> 13, 2026</span>Eighth meeting, thankfully, nothing unfortunate happened today!</li>
     <li><span class="update-date"><div data-i18n-html="nov">Nov.</div> 6, 2026</span>Seventh meeting, good turnout, lots of fun was had today</li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 31, 2026</span>🎃Happy Halloween🎃</li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 30, 2026</span>Sixth meeting, lots of food was brought for the holiday season</li>
