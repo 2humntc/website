@@ -15,6 +15,6 @@ document.querySelector('.sidebar-updates').innerHTML = `
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 9, 2026</span><div data-i18n-html="upd4"> Touhou EoSD New Classic released</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 9, 2026</span><div data-i18n-html="upd3">BAKA BAKA</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 7, 2026</span><div data-i18n-html="upd2">Website opened</div></li>
-    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div>< 7, 2026</span><div data-i18n-html="upd1">Welcome to the UMN Touhou Club!</div>/li>
+    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 7, 2026</span><div data-i18n-html="upd1">Welcome to the UMN Touhou Club!</div></li>
   </ul>
 `;
