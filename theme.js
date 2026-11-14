@@ -15,22 +15,95 @@ dotStyles.textContent = Object.entries(themes).map(([name, vars]) =>
 ).join('\n');
 document.head.appendChild(dotStyles);
 
+
+const originalLogo = new Image();
+originalLogo.src = 'logo.png';
+
+let logoReady = false;
+let currentLogoColor = null;
+
+originalLogo.onload = () => {
+  logoReady = true;
+  updateLogo();
+};
+
+function recolorLogo(img, color) {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d', {
+    willReadFrequently: true
+  });
+
+  canvas.width = img.naturalWidth;
+  canvas.height = img.naturalHeight;
+
+  ctx.drawImage(img, 0, 0);
+
+  const imageData = ctx.getImageData(
+    0, 0, canvas.width, canvas.height
+  );
+
+  const hex = color.replace('#', '');
+
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
+
+  const data = imageData.data;
+
+  for (let i = 0; i < data.length; i += 4) {
+    const brightness =
+      0.299 * data[i] +
+      0.587 * data[i + 1] +
+      0.114 * data[i + 2];
+
+    const alpha = 255 - brightness;
+    data[i] = r;
+    data[i + 1] = g;
+    data[i + 2] = b;
+    data[i + 3] = Math.round(
+      data[i + 3] * alpha / 255
+    );
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+
+  return canvas.toDataURL('image/png');
+}
+
+function updateLogo() {
+  if (!logoReady || !currentLogoColor) return;
+
+  const logo = document.querySelector('.hero-circle img');
+  if (!logo) return;
+
+  logo.src = recolorLogo(originalLogo, currentLogoColor);
+}
+
 function applyTheme(name) {
   const t = themes[name];
   if (!t) return;
+
   document.documentElement.style.removeProperty('--bg-image');
-  Object.entries(t).forEach(([k, v]) => document.documentElement.style.setProperty(k, v));
+  Object.entries(t).forEach(([k, v]) => {
+    document.documentElement.style.setProperty(k, v);
+  });
+
   document.querySelectorAll('.theme-dot').forEach(b => {
     b.classList.toggle('active', b.dataset.theme === name);
   });
-  localStorage.setItem('theme', name);
-}
 
-applyTheme(localStorage.getItem('theme') || 'scarlet');
+  localStorage.setItem('theme', name);
+  currentLogoColor = t['--color-primary'];
+  updateLogo();
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   applyTheme(localStorage.getItem('theme') || 'scarlet');
+
   document.querySelectorAll('.theme-dot').forEach(btn => {
-    btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
+    btn.addEventListener('click', () => {
+      applyTheme(btn.dataset.theme);
+    });
   });
 });
+

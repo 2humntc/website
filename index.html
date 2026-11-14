@@ -8,10 +8,9 @@
   <title>UMN Touhou Club</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="theme.js"></script>
+  <script src="theme.js" defer></script>
   <script src="lang.js" defer></script>
 </head>
-
 
 <body>
   <div class="header">
@@ -25,8 +24,8 @@
       <li><a href="pages/join.html" data-i18n="nav_join" class="join-btn">Join Us</a></li>
 
       <li class="lang-menu">
-        <button id="lang-btn" aria-label="Select language" data-i18n-attr="aria-label:lang_select"
-          aria-haspopup="true" aria-expanded="false">
+        <button id="lang-btn" aria-label="Select language" data-i18n-attr="aria-label:lang_select" aria-haspopup="true"
+          aria-expanded="false">
           <i class="fa-solid fa-globe"></i>
         </button>
         <ul id="lang-list" class="lang-list">
@@ -49,33 +48,44 @@
           <h2 class="hero-title" data-i18n="hero_title">UMN Touhou Club</h2>
           <h4> "<span id="randomtext" data-i18n-random="quotes"> </span>" </h4>
           <div class="theme-circles">
-            <button class="theme-dot active" data-theme="scarlet" style="background:#ffc7cb" title="Scarlet" data-i18n-attr="title:theme_scarlet"></button>
-            <button class="theme-dot" data-theme="sakura" style="background:#fde8f5" title="Sakura" data-i18n-attr="title:theme_sakura"></button>
-            <button class="theme-dot" data-theme="eientei" style="background:#d8e8c0" title="Eientei" data-i18n-attr="title:theme_eientei"></button>
-            <button class="theme-dot" data-theme="sanzu" style="background:#c8d8f0" title="Sanzu" data-i18n-attr="title:theme_sanzu"></button>
-            <button class="theme-dot" data-theme="moriya" style="background:#b8edc8" title="Suwa" data-i18n-attr="title:theme_moriya"></button>
-            <button class="theme-dot" data-theme="fusion" style="background:#ff9933" title="Fusion" data-i18n-attr="title:theme_fusion"></button>
-            <button class="theme-dot" data-theme="myouren" style="background:#660066" title="Myouren" data-i18n-attr="title:theme_myouren"></button>
-            <button class="theme-dot" data-theme="shotoku" style="background:#ffd633" title="Shotouku" data-i18n-attr="title:theme_shotouku"></button>
+            <button class="theme-dot active" data-theme="scarlet" style="background:#ffc7cb" title="Scarlet"
+              data-i18n-attr="title:theme_scarlet"></button>
+            <button class="theme-dot" data-theme="sakura" style="background:#fde8f5" title="Sakura"
+              data-i18n-attr="title:theme_sakura"></button>
+            <button class="theme-dot" data-theme="eientei" style="background:#d8e8c0" title="Eientei"
+              data-i18n-attr="title:theme_eientei"></button>
+            <button class="theme-dot" data-theme="sanzu" style="background:#c8d8f0" title="Sanzu"
+              data-i18n-attr="title:theme_sanzu"></button>
+            <button class="theme-dot" data-theme="moriya" style="background:#b8edc8" title="Suwa"
+              data-i18n-attr="title:theme_moriya"></button>
+            <button class="theme-dot" data-theme="fusion" style="background:#ff9933" title="Fusion"
+              data-i18n-attr="title:theme_fusion"></button>
+            <button class="theme-dot" data-theme="myouren" style="background:#660066" title="Myouren"
+              data-i18n-attr="title:theme_myouren"></button>
+            <button class="theme-dot" data-theme="shotoku" style="background:#ffd633" title="Shotouku"
+              data-i18n-attr="title:theme_shotouku"></button>
           </div>
-          <p class="hero-desc" id="lange" data-i18n="hero_desc">Welcome to the Touhou Club of UMN – Twin Cities. Not yet official, but very real. LARPers
+          <p class="hero-desc" id="lange" data-i18n="hero_desc">Welcome to the Touhou Club of UMN – Twin Cities. Not yet
+            official, but very real. LARPers
             and newcomers welcome — everyone starts somewhere.</p>
         </div>
-        <div class="hero-image">
-          <div class="carousel">
-            <a href="pages/faa.html">
-              <img id="carousel-img-a" class="active" src="" alt="" />
-              <img id="carousel-img-b" src="" alt="" />
-            </a>
-            <div class="carousel-author" id="carousel-author"></div>
-            <div class="carousel-dots" id="carousel-dots"></div>
-          </div>
+        <div class="hero-circle">
+          <img src="logo.png" alt="Touhou" onclick="openLightbox(this.src)">
         </div>
       </section>
       <div class="event-strip">
         <span class="event-label" data-i18n="event_label">Next meeting</span>
-        <span class="event-title" data-i18n="event_title">Fourth meeting - October 16th, 4pm - 6pm?</span>
-        <span class="event-location" data-i18n="event_location">Folwell Hall likely</span>
+        <span class="event-title">Eighth meeting - November <strong>13th</strong>, 4 pm - 6:30 pm</span>
+        <span class="event-location">Folwell Hall 12</span>
+      </div>
+
+      <div class="carousel">
+        <a href="pages/faa.html">
+          <img id="carousel-img-a" class="active" src="" alt="">
+          <img id="carousel-img-b" src="" alt="">
+        </a>
+        <div class="carousel-author" id="carousel-author"></div>
+        <div class="carousel-dots" id="carousel-dots"></div>
       </div>
 
       <section class="main-content">
@@ -90,40 +100,94 @@
       <section>
         <div id="touhou-calendar"></div>
         <script src="calendar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
       </section>
 
       <section class="links-section">
         <h2 data-i18n="links_heading">Links</h2>
         <span data-i18n="links_email">Email:</span> <a href="mailto:2humn@tutanota.de">2humn@tutanota.de</a><br>
-        <a href="https://www.websitegoodies.com/guestbook.php?a=view&id=1741560" data-i18n="links_guestbook">Guestbook</a><br>
+        <a href="https://www.websitegoodies.com/guestbook.php?a=view&id=1741560"
+          data-i18n="links_guestbook">Guestbook</a><br>
         <a href="pages/faa.html" data-i18n="links_archive">Featured Artwork Archive</a><br>
-        <a href="https://open.spotify.com/playlist/16VnuvSYcm5MkBt9EatOq9?si=581fd68eb5e04eec" data-i18n="links_spotify">Spotify Playlist</a>
+        <a href="https://open.spotify.com/playlist/16VnuvSYcm5MkBt9EatOq9?si=581fd68eb5e04eec"
+          data-i18n="links_spotify">Spotify Playlist</a>
       </section>
+
+
+      <div id="visitor-counter">
+        <div class="visitor-cal-top">
+          <span>VISITOR</span>
+        </div>
+
+        <div class="visitor-cal-body">
+          <div id="view-count">Loading...</div>
+          <div class="visitor-cal-footer">Thanks for visiting!</div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+
+      <script>
+        window.addEventListener('load', async () => {
+          const display = document.getElementById('view-count');
+
+          try {
+            const counter = new Counter({
+              workspace: '2humns-team-6215'
+            });
+
+            const result = await counter.up('first-counter-6215');
+
+            display.textContent = result.data.up_count;
+
+          } catch (error) {
+            console.error('Counter error:', error);
+            display.textContent = 'Error';
+          }
+        });
+      </script>
+
 
     </main>
   </div>
 
   <script src="updates.js"></script>
   <footer class="footer">
-    <a href="https://discord.gg/XPkmejzgx" class="footer-icon" title="Discord" data-i18n-attr="title:footer_discord"><i class="fa-brands fa-discord"></i></a>
-    <a href="https://www.instagram.com/" class="footer-icon" title="Instagram" data-i18n-attr="title:footer_instagram"><i
-        class="fa-brands fa-instagram"></i></a>
+    <a href="https://discord.gg/XPkmejzgx" class="footer-icon" title="Discord" data-i18n-attr="title:footer_discord"><i
+        class="fa-brands fa-discord"></i></a>
+    <a href="https://www.instagram.com/" class="footer-icon" title="Instagram"
+      data-i18n-attr="title:footer_instagram"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://open.spotify.com/playlist/16VnuvSYcm5MkBt9EatOq9?si=581fd68eb5e04eec" class="footer-icon"
       title="Spotify" data-i18n-attr="title:footer_spotify"><i class="fa-brands fa-spotify"></i></a>
-    <a href="mailto:2humn@tutanota.de" class="footer-icon" title="Email" data-i18n-attr="title:footer_email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="mailto:2humn@tutanota.de" class="footer-icon" title="Email" data-i18n-attr="title:footer_email"><i
+        class="fa-solid fa-envelope"></i></a>
   </footer>
- <a href='https://www.versicherungen.at/pflegevorsorge/'>Pflegevorsorge privat</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=587ff5982c6c2dd7872246222f98a1fd3f24b263'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1699944/t/0"></script>
-  
+
   <script>
+    const imagePositions = {
+      'WRain_momoyo.png': '50% 20%',
+      'WRain_moon.png': '10% 50%',
+      'WRain_tenshi.png': '50% 25%',
+      'WRain_kkr.png': '50% 10%',
+      'Ether_reimu_loading.gif': '50% 20%',
+      'WRain_toyohime_yorihime.png': '50% 35%'
+    };
+
     fetch('imgs.csv')
-      .then(r => r.text())
+      .then(r => {
+        if (!r.ok) throw new Error('Cannot load imgs.csv');
+        return r.text();
+      })
       .then(text => {
-        const files = text.split('\n').map(l => l.trim()).filter(Boolean);
+        const files = text.split(/\r?\n/)
+          .map(l => l.trim())
+          .filter(Boolean);
+
         if (!files.length) return;
 
         let current = 0;
         let useA = true;
+
         const imgA = document.getElementById('carousel-img-a');
         const imgB = document.getElementById('carousel-img-b');
         const author = document.getElementById('carousel-author');
@@ -136,21 +200,20 @@
           dotsEl.appendChild(d);
         });
 
-        function getSrc(file) {
-          return file.includes('.') ? 'imgs/' + file : 'imgs/' + file + '.png';
-        }
-
         function show(i) {
           current = i;
-          const file = files[i];
-          const next = useA ? imgB : imgA;
-          const curr = useA ? imgA : imgB;
 
-          const tryExt = (exts) => {
-            if (!exts.length) return;
-            next.src = 'imgs/' + file + '.' + exts[0];
-            next.onerror = () => tryExt(exts.slice(1));
-          };
+          const file = files[i];
+          const next = useA ? imgA : imgB;
+          const curr = useA ? imgB : imgA;
+
+          const position = imagePositions[file] || '50% 50%';
+
+          next.style.setProperty(
+            'object-position',
+            position,
+            'important'
+          );
 
           next.onload = () => {
             next.classList.add('active');
@@ -158,32 +221,50 @@
             useA = !useA;
           };
 
-          if (file.includes('.')) {
-            next.src = 'imgs/' + file;
-          } else {
-            tryExt(['png', 'jpg', 'jpeg']);
-          }
+          next.onerror = () => {
+            console.error('Image not found:', file);
+          };
+
+          next.src = file.includes('.')
+            ? 'imgs/' + file
+            : 'imgs/' + file + '.png';
 
           const authorName = file.split('_')[0];
           author.textContent = '© ' + authorName;
-          document.querySelectorAll('.carousel-dot').forEach((d, j) => {
-            d.classList.toggle('active', j === i);
-          });
-        }
 
-        imgA.onload = () => {
-          imgA.classList.add('active');
-          setInterval(() => show((current + 1) % files.length), 3500);
-        };
-        imgA.src = getSrc(files[0]);
-        const authorName = files[0].split('_')[0];
-        author.textContent = '© ' + authorName;
+          document.querySelectorAll('.carousel-dot')
+            .forEach((d, j) => {
+              d.classList.toggle('active', j === i);
+            });
+        }
+        show(0);
+        setInterval(() => {
+          show((current + 1) % files.length);
+        }, 1500);
+
       })
-      .catch(() => {
-        document.querySelector('.hero-image').textContent =
-          (window.t && window.t('no_images')) || '[ no images found ]';
+      .catch(error => {
+        console.error('Carousel error:', error);
       });
   </script>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">✕</span>
+  <img id="lightbox-img" src="" alt="" />
+</div>
 
 </html>
