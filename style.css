@@ -878,13 +878,11 @@ body {
 .join-flyer-section {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
 }
 
 .join-flyer {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
+  width: 30%;
+  height: 30%;
   display: block;
   border-radius: 4px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
