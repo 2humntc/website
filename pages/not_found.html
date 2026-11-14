@@ -17,7 +17,16 @@
   <main class="main" style="display:flex; flex-direction:column; justify-content:center; min-height: calc(100vh - 70px);">
     <p class="hero-eyebrow">404</p>
     <h2 class="hero-title" data-i18n="nf_title">Something was here before</h2>
-    <p class="hero-desc" data-i18n="nf_desc">But now it's lost to time...</p>
+    <script>
+    var texts = [
+      "But now it's lost to time...",
+      "But now there are none...",
+      "There are only 7 honest pages.",
+      "There probably wasn't anything here worth seeing anyway."
+    ];
+    document.getElementById('lol').innerHTML = texts[Math.floor(Math.random() * texts.length)];
+    </script>
+    <p class="hero-desc" data-i18n="nf_desc", id="lol">But now it's lost to time...</p>
     <div style="margin-top: 24px;">
       <a href="index.html" class="event-link" style="font-size:14px;" data-i18n="nf_back">← Back to home</a>
     </div>
