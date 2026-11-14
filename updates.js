@@ -10,8 +10,8 @@ document.querySelector('.sidebar-updates').innerHTML = `
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 9, 2026</span> Our third meeting! Really discuss a lot!</li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 2, 2026</span> Our second meeting...</li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 25, 2026</span> Our first meeting!</li>
-    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 20, 2026</span> We have a playlist now</li>
-    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 10, 2026</span> Instagram page opened</li>
+    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 20, 2026</span><div data-i18n-html="upd6" We have a playlist now</div></li>
+    <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 10, 2026</span><div data-i18n-html="upd5"> Instagram page opened</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 9, 2026</span><div data-i18n-html="upd4"> Touhou EoSD New Classic released</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 9, 2026</span><div data-i18n-html="upd3">BAKA BAKA</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 7, 2026</span><div data-i18n-html="upd2">Website opened</div></li>
