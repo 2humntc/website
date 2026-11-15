@@ -51,8 +51,8 @@
 
   "no_images": "[ образы не находивший ]",
 
-  "nf_page_title": "Page not found",
-  "nf_title": "Something was here before",
-  "nf_desc": "But now it's lost to time...",
+  "nf_page_title": "страница не находивший ",
+  "nf_title": "что-то здесь до",
+  "nf_desc": "но сейчас потерянный время...",
   "nf_back": "← Back to home"
 }
