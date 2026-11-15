@@ -6,8 +6,8 @@ document.querySelector('.sidebar-updates').innerHTML = `
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 31, 2026</span>🎃Happy Halloween🎃</li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 30, 2026</span>Sixth meeting, lots of food was brought for the holiday season</li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 23, 2026</span>Fifth meeting, 🍕</li>
-    <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 16, 2026</span> Our fourth meeting! Now until 6:30 PM!</li>
-    <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 9, 2026</span>Our third meeting! Really discuss a lot!</li>
+    <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 16, 2026</span><div data-i18n-html="upd10"> Our fourth meeting! Now until 6:30 PM!</div></li>
+    <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 9, 2026</span><div data-i18n-html="upd09">Our third meeting! Really discuss a lot!</div></li>
     <li><span class="update-date"><div data-i18n-html="oct">Oct.</div> 2, 2026</span><div data-i18n-html="upd8">Our second meeting...</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 25, 2026</span><div data-i18n-html="upd7">Our first meeting!</div></li>
     <li><span class="update-date"><div data-i18n-html="sept">Sept.</div> 20, 2026</span><div data-i18n-html="upd6"> We have a playlist now</div></li>
